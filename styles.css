@@ -398,11 +398,11 @@ h2 {
 
 .logo-frame img {
   display: block;
-  width: 180%;
+  width: 170%;
   max-width: none;
   height: auto;
   min-height: 0;
-  margin: -16% -40%;
+  margin: -14% -35%;
   object-fit: contain;
 }
 
