@@ -389,8 +389,12 @@ h2 {
 
 .logo-frame {
   overflow: hidden;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(154, 113, 61, 0.18);
-  border-radius: 42% 42% 18px 18px;
+  border-radius: 50%;
   padding: 0;
   background: linear-gradient(145deg, #fbf6f2 0%, #f1e7df 100%);
   box-shadow: var(--shadow);
@@ -398,11 +402,12 @@ h2 {
 
 .logo-frame img {
   display: block;
-  width: 170%;
+  width: 145%;
+  flex: 0 0 auto;
   max-width: none;
   height: auto;
   min-height: 0;
-  margin: -14% -35%;
+  margin: 0;
   object-fit: contain;
 }
 
@@ -1222,7 +1227,7 @@ h2 {
 
   .logo-frame {
     padding: 0;
-    border-radius: 36% 36% 14px 14px;
+    border-radius: 50%;
   }
 
   .floating-card-top {
