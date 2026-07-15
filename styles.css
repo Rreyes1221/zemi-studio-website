@@ -444,8 +444,8 @@ h2 {
 }
 
 .floating-card-bottom {
-  bottom: 8%;
-  left: -42px;
+  bottom: -3%;
+  left: -28px;
 }
 
 .trust-strip {
@@ -1235,7 +1235,7 @@ h2 {
   }
 
   .floating-card-bottom {
-    bottom: 3%;
+    bottom: -4%;
   }
 
   .price-list li {
