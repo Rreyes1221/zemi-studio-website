@@ -1,11 +1,15 @@
 :root {
-  --ink: #17130f;
-  --ink-soft: #5f5750;
-  --cream: #f5efea;
-  --cream-light: #fffaf6;
-  --cream-deep: #e9ddd3;
-  --bronze: #9a713d;
-  --bronze-light: #c5a77c;
+  --ink: #1c1b18;
+  --ink-soft: #625a52;
+  --cream: #f4efea;
+  --cream-light: #f4efea;
+  --cream-deep: #dccdba;
+  --sand: #dccdba;
+  --taupe: #a38f7a;
+  --warm-grey: #b7ada0;
+  --bronze: #c7a97d;
+  --bronze-light: #dccdba;
+  --green: #7a8b6f;
   --line: rgba(23, 19, 15, 0.14);
   --white: #ffffff;
   --shadow: 0 22px 60px rgba(58, 42, 28, 0.12);
@@ -94,7 +98,7 @@ button:focus-visible {
   z-index: 1000;
   top: 0;
   border-bottom: 1px solid rgba(23, 19, 15, 0.08);
-  background: rgba(245, 236, 229, 0.96);
+  background: rgba(244, 239, 234, 0.96);
   backdrop-filter: blur(14px);
 }
 
@@ -136,18 +140,18 @@ button:focus-visible {
 }
 
 .header-logo {
-  width: 150px;
-  height: 92px;
+  width: 142px;
+  height: 90px;
   display: block;
   overflow: hidden;
   text-decoration: none;
 }
 
 .header-logo img {
-  width: 180px;
-  max-width: none;
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  transform: translate(-15px, -18px);
+  transform: none;
 }
 
 .site-nav {
@@ -223,7 +227,7 @@ button:focus-visible {
   align-items: center;
   background:
     radial-gradient(circle at 9% 8%, rgba(197, 167, 124, 0.16), transparent 27%),
-    linear-gradient(135deg, #fffaf6 0%, #f5ede7 100%);
+    linear-gradient(135deg, var(--cream) 0%, var(--sand) 160%);
 }
 
 .hero-grid {
@@ -349,7 +353,7 @@ h2 {
 }
 
 .button-dark:hover {
-  background: var(--bronze);
+  background: var(--green);
 }
 
 .button-light {
@@ -464,7 +468,7 @@ h2 {
 }
 
 .trust-strip {
-  color: #f7f0e9;
+  color: var(--cream);
   background: var(--ink);
 }
 
@@ -535,7 +539,7 @@ h2 {
 }
 
 .services-section {
-  background: var(--cream);
+  background: color-mix(in srgb, var(--sand) 45%, var(--cream));
 }
 
 .section-heading {
@@ -722,7 +726,7 @@ h2 {
   margin-top: 28px;
   padding: 28px;
   color: var(--cream-light);
-  background: var(--bronze);
+  background: var(--green);
 }
 
 .menu-note p {
@@ -741,7 +745,7 @@ h2 {
 .social-feature {
   overflow: hidden;
   color: var(--cream-light);
-  background: #201a15;
+  background: var(--ink);
 }
 
 .social-grid {
@@ -761,7 +765,14 @@ h2 {
   border-right: 1px solid rgba(255, 255, 255, 0.12);
   background:
     radial-gradient(circle at center, rgba(197, 167, 124, 0.15), transparent 52%),
-    #1a1511;
+    var(--ink);
+}
+
+.social-logo {
+  position: relative;
+  z-index: 2;
+  width: min(82%, 520px);
+  filter: invert(1) grayscale(1) brightness(1.8);
 }
 
 .social-art::before {
@@ -895,7 +906,7 @@ h2 {
   overflow: hidden;
   padding-block: clamp(80px, 12vw, 150px);
   color: var(--cream-light);
-  background: var(--bronze);
+  background: var(--green);
   text-align: center;
 }
 
@@ -955,6 +966,16 @@ h2 {
 
 .wordmark-footer {
   color: var(--cream-light);
+}
+
+.footer-logo {
+  width: 180px;
+  display: block;
+}
+
+.footer-logo img {
+  width: 100%;
+  filter: invert(1) grayscale(1) brightness(1.8);
 }
 
 .footer-brand p {
@@ -1055,13 +1076,13 @@ h2 {
   }
 
   .header-logo {
-    width: 120px;
+    width: 112px;
     height: 72px;
   }
 
   .header-logo img {
-    width: 145px;
-    transform: translate(-12px, -15px);
+    width: 100%;
+    transform: none;
   }
 
   .menu-toggle {
