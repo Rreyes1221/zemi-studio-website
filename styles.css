@@ -773,16 +773,13 @@ h2 {
   z-index: 2;
   width: min(82%, 520px);
   height: auto;
+  margin: auto;
+  object-fit: contain;
   filter: invert(1) grayscale(1) brightness(1.8);
 }
 
 .social-art::before {
-  position: absolute;
-  width: 440px;
-  height: 440px;
-  border: 1px solid rgba(197, 167, 124, 0.35);
-  border-radius: 50%;
-  content: "";
+  display: none;
 }
 
 .social-art p,
