@@ -538,6 +538,63 @@ h2 {
   margin-bottom: 0;
 }
 
+.why-zemi {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(50px, 9vw, 130px);
+  margin-top: clamp(64px, 8vw, 105px);
+  padding-top: clamp(46px, 6vw, 72px);
+  border-top: 1px solid var(--bronze);
+}
+
+.why-zemi-title h2 {
+  margin-bottom: 0;
+}
+
+.why-zemi-copy {
+  max-width: 680px;
+}
+
+.why-zemi-copy p {
+  color: var(--ink-soft);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.why-zemi-copy .why-zemi-meaning {
+  margin-top: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.4;
+}
+
+.why-zemi-copy em {
+  color: var(--bronze);
+  font-style: normal;
+}
+
+.why-zemi-copy strong {
+  color: var(--ink);
+  font-size: 0.9em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.why-zemi-copy .why-zemi-thanks {
+  margin: 30px 0 0;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.why-zemi-thanks span {
+  margin-left: 4px;
+  color: var(--green);
+}
+
 .services-section {
   background: color-mix(in srgb, var(--sand) 45%, var(--cream));
 }
@@ -1005,6 +1062,7 @@ h2 {
   }
 
   .intro-grid,
+  .why-zemi,
   .visit-grid {
     grid-template-columns: 1fr;
   }
