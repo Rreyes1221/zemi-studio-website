@@ -136,14 +136,18 @@ button:focus-visible {
 }
 
 .header-logo {
-  width: 106px;
+  width: 150px;
+  height: 92px;
   display: block;
+  overflow: hidden;
   text-decoration: none;
 }
 
 .header-logo img {
-  width: 100%;
+  width: 180px;
+  max-width: none;
   height: auto;
+  transform: translate(-15px, -18px);
 }
 
 .site-nav {
@@ -1048,6 +1052,16 @@ h2 {
 
   .header-inner {
     min-height: 70px;
+  }
+
+  .header-logo {
+    width: 120px;
+    height: 72px;
+  }
+
+  .header-logo img {
+    width: 145px;
+    transform: translate(-12px, -15px);
   }
 
   .menu-toggle {
