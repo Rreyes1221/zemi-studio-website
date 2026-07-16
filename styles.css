@@ -806,6 +806,13 @@ h2 {
   transform: scale(1.015);
 }
 
+.artistry-gallery .gallery-reveal {
+  width: min(100%, 520px);
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 12px;
+}
+
 .visit-section {
   background: var(--cream-light);
 }
