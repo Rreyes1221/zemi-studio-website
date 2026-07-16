@@ -748,73 +748,13 @@ h2 {
   background: var(--ink);
 }
 
-.social-grid {
-  display: grid;
-  grid-template-columns: 0.92fr 1.08fr;
-  align-items: stretch;
-}
-
-.social-art {
-  position: relative;
-  min-height: 520px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
-  background:
-    radial-gradient(circle at center, rgba(197, 167, 124, 0.15), transparent 52%),
-    var(--ink);
-}
-
-.social-logo {
-  position: relative;
-  z-index: 2;
-  width: min(82%, 520px);
-  height: auto;
-  margin: auto;
-  object-fit: contain;
-  filter: invert(1) grayscale(1) brightness(1.8);
-}
-
-.social-art::before {
-  display: none;
-}
-
-.social-art p,
-.social-art small,
-.social-star {
-  position: relative;
-  z-index: 2;
-}
-
-.social-art p {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(70px, 9vw, 116px);
-  letter-spacing: 0.15em;
-  line-height: 1;
-}
-
-.social-art small {
-  margin-top: 16px;
-  color: var(--bronze-light);
-  font-size: 10px;
-  letter-spacing: 0.24em;
-}
-
-.social-star {
-  margin-bottom: 23px;
-  color: var(--bronze-light);
-  font-size: 30px;
+.social-inner {
+  padding-block: clamp(80px, 10vw, 130px);
 }
 
 .social-copy {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: clamp(60px, 9vw, 120px);
+  max-width: 760px;
+  padding: 0 0 52px;
 }
 
 .social-copy h2 {
@@ -840,6 +780,30 @@ h2 {
 
 .social-actions a:hover {
   color: var(--bronze-light);
+}
+
+.artistry-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+}
+
+.artistry-gallery figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #292722;
+}
+
+.artistry-gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 300ms ease;
+}
+
+.artistry-gallery figure:hover img {
+  transform: scale(1.015);
 }
 
 .visit-section {
@@ -1041,7 +1005,6 @@ h2 {
   }
 
   .intro-grid,
-  .social-grid,
   .visit-grid {
     grid-template-columns: 1fr;
   }
@@ -1054,14 +1017,12 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .social-art {
-    min-height: 440px;
-    border-right: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  .artistry-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .social-copy {
-    padding: 70px 0;
+    padding: 0 0 42px;
   }
 }
 
@@ -1218,22 +1179,9 @@ h2 {
     min-height: 0;
   }
 
-  .social-art {
-    min-height: 340px;
-  }
-
-  .social-art::before {
-    width: 310px;
-    height: 310px;
-  }
-
-  .social-art p {
-    font-size: clamp(55px, 17vw, 82px);
-  }
-
-  .social-art small {
-    max-width: 260px;
-    text-align: center;
+  .artistry-gallery {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .visit-details {
