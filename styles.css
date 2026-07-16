@@ -1197,6 +1197,12 @@ h2 {
     --shell: min(100% - 28px, 1180px);
   }
 
+  .site-header {
+    background: #f4efea;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
   .header-inner {
     min-height: 70px;
   }
@@ -1217,17 +1223,23 @@ h2 {
 
   .site-nav {
     position: fixed;
-    z-index: 999;
+    z-index: 1001;
     top: 70px;
     right: 0;
-    bottom: 0;
+    bottom: auto;
     left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
     display: flex;
     align-items: stretch;
     flex-direction: column;
     gap: 0;
+    overflow-y: auto;
     padding: 30px 22px;
-    background: var(--cream-light);
+    background: #f4efea;
+    box-shadow: 0 20px 45px rgba(28, 27, 24, 0.16);
+    opacity: 1;
     transform: translateX(100%);
     transition: transform 220ms ease;
   }
