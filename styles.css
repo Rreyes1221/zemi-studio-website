@@ -135,6 +135,17 @@ button:focus-visible {
   font-size: 17px;
 }
 
+.header-logo {
+  width: 106px;
+  display: block;
+  text-decoration: none;
+}
+
+.header-logo img {
+  width: 100%;
+  height: auto;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -215,10 +226,14 @@ button:focus-visible {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
+  grid-template-columns: 1fr;
   align-items: center;
   gap: clamp(50px, 7vw, 100px);
   padding-block: 82px 92px;
+}
+
+.hero-copy {
+  max-width: 790px;
 }
 
 .hero-orbit {
