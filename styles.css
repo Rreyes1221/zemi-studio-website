@@ -732,8 +732,9 @@ h2 {
 
 .price-list li {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 14px;
   padding-block: 16px;
   border-bottom: 1px solid rgba(23, 19, 15, 0.08);
 }
@@ -758,6 +759,29 @@ h2 {
   font-family: var(--serif);
   font-size: 20px;
   font-weight: 400;
+}
+
+.price-book {
+  padding: 7px 0 5px 12px;
+  border-left: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.price-book span {
+  display: inline;
+  margin: 0 0 0 4px;
+  color: var(--bronze);
+  font-size: inherit;
+}
+
+.price-book:hover {
+  color: var(--green);
 }
 
 .menu-note {
