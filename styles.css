@@ -356,6 +356,17 @@ h2 {
   background: var(--green);
 }
 
+.button-outline-dark {
+  border-color: var(--ink);
+  color: var(--ink);
+  background: transparent;
+}
+
+.button-outline-dark:hover {
+  color: var(--cream-light);
+  background: var(--ink);
+}
+
 .button-light {
   border-color: rgba(255, 255, 255, 0.5);
   color: var(--white);
@@ -1029,6 +1040,13 @@ h2 {
   font-size: 17px;
 }
 
+.visit-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .visit-details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1481,6 +1499,11 @@ h2 {
   }
 
   .social-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .visit-actions {
     align-items: stretch;
     flex-direction: column;
   }
