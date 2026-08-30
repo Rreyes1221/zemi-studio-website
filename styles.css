@@ -625,6 +625,7 @@ h2 {
 }
 
 .service-card-featured {
+  grid-column: 1 / -1;
   color: var(--cream-light);
   background: var(--ink);
 }
