@@ -199,6 +199,29 @@ button:focus-visible {
   background: var(--ink);
 }
 
+.header-mobile-actions {
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-book {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  border: 1px solid var(--ink);
+  color: var(--cream-light);
+  background: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .menu-toggle {
   display: none;
   width: 44px;
@@ -597,9 +620,9 @@ h2 {
 
 .heidi-portrait img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: 50% 61%;
+  object-position: 50% 66%;
   background: var(--cream);
   box-shadow: 0 28px 65px rgba(0, 0, 0, 0.24);
 }
@@ -1716,6 +1739,10 @@ h2 {
     transform: none;
   }
 
+  .header-mobile-actions {
+    display: flex;
+  }
+
   .menu-toggle {
     display: flex;
   }
@@ -1854,8 +1881,13 @@ h2 {
   }
 
   .heidi-portrait {
-    width: min(100%, 560px);
+    width: min(100%, 520px);
     margin-inline: auto;
+  }
+
+  .heidi-portrait img {
+    aspect-ratio: 1 / 1;
+    object-position: 50% 66%;
   }
 
   .heidi-portrait::before {
