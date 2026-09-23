@@ -620,9 +620,7 @@ h2 {
 
 .heidi-portrait img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: 50% 66%;
+  height: auto;
   background: var(--cream);
   box-shadow: 0 28px 65px rgba(0, 0, 0, 0.24);
 }
@@ -672,10 +670,6 @@ h2 {
   font-size: 22px;
   font-style: italic;
   line-height: 1.45;
-}
-
-.heidi-copy .button {
-  margin-top: 4px;
 }
 
 .services-section {
@@ -1403,6 +1397,10 @@ h2 {
   text-underline-offset: 3px;
 }
 
+.detail-block a[href^="mailto:"] {
+  overflow-wrap: anywhere;
+}
+
 .detail-block small {
   color: #7d7168;
 }
@@ -1885,11 +1883,6 @@ h2 {
     margin-inline: auto;
   }
 
-  .heidi-portrait img {
-    aspect-ratio: 1 / 1;
-    object-position: 50% 66%;
-  }
-
   .heidi-portrait::before {
     top: -12px;
     right: 16px;
@@ -1908,10 +1901,6 @@ h2 {
 
   .heidi-copy h2 {
     font-size: clamp(39px, 11vw, 56px);
-  }
-
-  .heidi-copy .button {
-    width: 100%;
   }
 
   .pricing-notice {
